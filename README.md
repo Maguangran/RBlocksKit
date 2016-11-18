@@ -1,2 +1,2 @@
 # RBlocksKit
-轻量的block替换事件
+轻量级的BlocksKit
