@@ -9,7 +9,7 @@
 
 #import "NSArray+RBlocks.h"
 
-#import "UIButton+RBlocks.h"
+#import "UIControl+RBlocks.h"
 
 #import "NSObject+RBlocks.h"
 

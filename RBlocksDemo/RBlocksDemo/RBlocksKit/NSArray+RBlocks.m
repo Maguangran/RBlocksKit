@@ -31,4 +31,17 @@
     }
     return tempArr.copy;
 }
+
+-(BOOL)r_fit:(fitBlock)fit{
+    NSArray *selfArr = self;
+    if (fit) {
+        for (id obj in selfArr) {
+            if (!fit(obj)) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
 @end

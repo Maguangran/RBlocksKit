@@ -21,12 +21,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self testTap];
+    [self testFit];
+//    [self testTap];
     
 //    [self testArray];
     
 //    [self testThenAndEvent];
     
+}
+-(void)testFit{
+    NSArray *items = @[@"1",@"2",@"3",@"4",@"5"];
+    BOOL fit = [items r_fit:^BOOL(NSString* obj) {
+        if ([obj isEqualToString:@"2"]) {
+            return true;
+        }
+        return false;
+    }];
+    if (fit) {
+        NSLog(@"fitable");
+    }else{
+        NSLog(@"unfitable");
+    }
 }
 -(void)testTap{
     UIView *tapView = [[UIView alloc] initThen:^(UIView* view) {
@@ -51,7 +66,6 @@
     [self.view addSubview:btn];
     
 }
-
 
 -(void)testArray{
     NSArray *items = @[@"1",@"2",@"3",@"4",@"5"];

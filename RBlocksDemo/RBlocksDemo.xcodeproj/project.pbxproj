@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8636CFC01E07748300B28A96 /* UIControl+RBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8636CFBF1E07748300B28A96 /* UIControl+RBlocks.m */; };
 		8671343E1DDE99A800B4560E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8671343D1DDE99A800B4560E /* main.m */; };
 		867134411DDE99A800B4560E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 867134401DDE99A800B4560E /* AppDelegate.m */; };
 		867134441DDE99A800B4560E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867134431DDE99A800B4560E /* ViewController.m */; };
@@ -15,11 +16,12 @@
 		8671344C1DDE99A800B4560E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8671344A1DDE99A800B4560E /* LaunchScreen.storyboard */; };
 		8671345D1DDE99C300B4560E /* NSArray+RBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 867134551DDE99C300B4560E /* NSArray+RBlocks.m */; };
 		8671345E1DDE99C300B4560E /* NSObject+RBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 867134571DDE99C300B4560E /* NSObject+RBlocks.m */; };
-		8671345F1DDE99C300B4560E /* UIButton+RBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8671345A1DDE99C300B4560E /* UIButton+RBlocks.m */; };
 		867134601DDE99C300B4560E /* UIView+RBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 8671345C1DDE99C300B4560E /* UIView+RBlocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8636CFBE1E07748300B28A96 /* UIControl+RBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+RBlocks.h"; sourceTree = "<group>"; };
+		8636CFBF1E07748300B28A96 /* UIControl+RBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+RBlocks.m"; sourceTree = "<group>"; };
 		867134391DDE99A800B4560E /* RBlocksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBlocksDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8671343D1DDE99A800B4560E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8671343F1DDE99A800B4560E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,8 +37,6 @@
 		867134561DDE99C300B4560E /* NSObject+RBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RBlocks.h"; sourceTree = "<group>"; };
 		867134571DDE99C300B4560E /* NSObject+RBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RBlocks.m"; sourceTree = "<group>"; };
 		867134581DDE99C300B4560E /* RBlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBlocksKit.h; sourceTree = "<group>"; };
-		867134591DDE99C300B4560E /* UIButton+RBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+RBlocks.h"; sourceTree = "<group>"; };
-		8671345A1DDE99C300B4560E /* UIButton+RBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+RBlocks.m"; sourceTree = "<group>"; };
 		8671345B1DDE99C300B4560E /* UIView+RBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RBlocks.h"; sourceTree = "<group>"; };
 		8671345C1DDE99C300B4560E /* UIView+RBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RBlocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,10 +101,10 @@
 				867134551DDE99C300B4560E /* NSArray+RBlocks.m */,
 				867134561DDE99C300B4560E /* NSObject+RBlocks.h */,
 				867134571DDE99C300B4560E /* NSObject+RBlocks.m */,
-				867134591DDE99C300B4560E /* UIButton+RBlocks.h */,
-				8671345A1DDE99C300B4560E /* UIButton+RBlocks.m */,
 				8671345B1DDE99C300B4560E /* UIView+RBlocks.h */,
 				8671345C1DDE99C300B4560E /* UIView+RBlocks.m */,
+				8636CFBE1E07748300B28A96 /* UIControl+RBlocks.h */,
+				8636CFBF1E07748300B28A96 /* UIControl+RBlocks.m */,
 			);
 			path = RBlocksKit;
 			sourceTree = "<group>";
@@ -181,10 +181,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8636CFC01E07748300B28A96 /* UIControl+RBlocks.m in Sources */,
 				867134441DDE99A800B4560E /* ViewController.m in Sources */,
 				867134411DDE99A800B4560E /* AppDelegate.m in Sources */,
 				867134601DDE99C300B4560E /* UIView+RBlocks.m in Sources */,
-				8671345F1DDE99C300B4560E /* UIButton+RBlocks.m in Sources */,
 				8671345E1DDE99C300B4560E /* NSObject+RBlocks.m in Sources */,
 				8671343E1DDE99A800B4560E /* main.m in Sources */,
 				8671345D1DDE99C300B4560E /* NSArray+RBlocks.m in Sources */,
@@ -344,6 +344,7 @@
 				867134521DDE99A800B4560E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

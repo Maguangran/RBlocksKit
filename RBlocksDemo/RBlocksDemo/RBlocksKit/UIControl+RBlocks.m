@@ -1,22 +1,22 @@
 //
-//  UIButton+RBlocks.m
-//  MyInfo
+//  UIControl+RBlocks.m
+//  RBlocksDemo
 //
-//  Created by bwrc on 16/11/17.
+//  Created by bwrc on 16/12/19.
 //  Copyright © 2016年 bwrc. All rights reserved.
 //
 
-#import "UIButton+RBlocks.h"
+#import "UIControl+RBlocks.h"
 #import <objc/runtime.h>
 static NSString *const eventKey;
-@interface UIButton ()
+@interface UIControl ()
 @property (nonatomic,copy) eventBlock eventIn;
 @end
 @implementation UIButton (RBlocks)
 -(void)r_addEvent:(eventBlock)eventHandler andControlEvents:(UIControlEvents)controlEvents{
-    UIButton *btn = self;
+    UIControl *c = self;
     self.eventIn = eventHandler;
-    [btn addTarget:self action:@selector(btnTouchWithEvent) forControlEvents:controlEvents];
+    [c addTarget:self action:@selector(btnTouchWithEvent) forControlEvents:controlEvents];
 }
 -(eventBlock)eventIn{
     return objc_getAssociatedObject(self, &eventKey);
